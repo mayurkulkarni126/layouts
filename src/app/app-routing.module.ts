@@ -1,18 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from './core/auth.guard';
-import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
       import('./admin/admin.module').then((m) => m.AdminModule)
-  },
-  {
-    path: '**',
-    component: PageNotFoundComponent,
-  },
+  }
 ];
 
 @NgModule({

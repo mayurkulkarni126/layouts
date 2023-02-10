@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { NgChartsModule } from 'ng2-charts';
@@ -15,7 +14,6 @@ import { DataService } from './data.service';
     ChartsRoutingModule,
     MatCardModule,
     MatGridListModule,
-    FlexLayoutModule,
     NgChartsModule
   ],
   declarations: [
